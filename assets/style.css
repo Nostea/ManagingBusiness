@@ -547,3 +547,71 @@ hr {
   margin-bottom: 10%;
   border: 1px solid rgba(133, 147, 163, 0.16);
 }
+
+/*  !   testimonial / clients section */
+
+blockquote {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  letter-spacing: -2%;
+  padding-bottom: 4%;
+}
+
+.client-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-quote {
+  padding-left: 8vw;
+}
+
+/* ! get started section with green box */
+
+.get-started {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+.green-box h2 {
+  color: var(--color-white);
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.green-box {
+  background-color: var(--color-dark-green);
+  width: 80vw;
+  margin: auto;
+  border-radius: 1.4rem;
+}
+
+.green-box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 25% 6% 25%;
+}
+
+/* ! footer */
+
+footer {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
