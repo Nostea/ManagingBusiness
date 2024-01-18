@@ -1,0 +1,357 @@
+@font-face {
+  font-family: Manrope;
+  src: url(./fonts/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Acme;
+  src: url(./fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+  font-family: Anek Bangla;
+  src: url(./fonts/AnekBangla-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: B612 Mono;
+  src: url(./fonts/B612Mono-Bold.ttf);
+}
+
+@font-face {
+  font-family: Anek Gujarati;
+  src: url(./fonts/AnekGujarati-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins Medium;
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-black: #000000;
+  --color-dark-green: #05796b;
+  --color-orange: #f57059;
+  --color-lighter-orange: #fbb57b;
+  --color-dark-gray: #757095;
+  --color-light-gray: #8593a3;
+  --color-iconBG-gray: #ececec;
+  --color-white: #ffffff;
+  --color-black-lighter: #282828;
+
+  --line-height-p: 3.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: clamp(4rem, 4vw, 6rem);
+  line-height: 8rem;
+  letter-spacing: -3%;
+}
+
+h2 {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  line-height: 5.2rem;
+  letter-spacing: -3%;
+}
+
+.h2-subtitle {
+  font-family: Anek Bangla, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--color-black);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  line-height: 2.8rem;
+  letter-spacing: -2%;
+}
+
+h4 {
+  font-family: Acme;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+}
+
+p {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.8214rem + 0.8929vw, 1.25rem);
+  color: var(--color-dark-gray);
+  line-height: 3.2rem;
+}
+
+a {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-family: Anek Bangla, Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.8214rem + 0.8929vw, 2rem);
+  text-transform: uppercase;
+}
+
+/* ! Buttons */
+
+.button-orange {
+  text-align: center;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  padding: 1.4rem 2.5rem 1.4rem 2.5rem;
+  border-radius: 5rem;
+}
+
+.button-green {
+  text-align: center;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: var(--color-white);
+  background-color: var(--color-dark-green);
+  padding: 1.4rem 4rem 1.4rem 4rem;
+  border-radius: 5rem;
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+}
+
+/* * general styling end */
+
+/* ! header & nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.nav-links {
+  width: 30vw;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.nav-links a {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 17vw;
+  gap: 3vw;
+  margin-left: 1vw;
+}
+
+/* ! Landing / Header section */
+
+.landing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8vw;
+}
+
+.landing-content {
+  padding-top: 4vh;
+}
+
+.landing-content p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  padding-bottom: 5vh;
+}
+
+.mini-title {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  color: var(--color-black-lighter);
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 200%;
+  letter-spacing: -5%;
+}
+
+.mini-container p {
+  font-size: 1.6rem;
+  font-family: Anak Gujarati, Arial, Helvetica, sans-serif;
+  line-height: 160%;
+  letter-spacing: -5%;
+  color: var(--color-iconBG-gray);
+}
+
+.marketing-container {
+  margin-top: 7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3vw;
+}
+
+.mini-container {
+  width: 15vw;
+}
+
+/* ! partnerns  /   logo-carousel section */
+
+.partners {
+  padding-top: 4vh;
+  padding-bottom: 8vh;
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners h4 {
+  padding-bottom: 4vh;
+}
+
+.logo-carousel {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo-carousel img {
+  padding: 1%;
+}
+
+/* ! services Section */
+
+.services {
+  background-image: url(./img/wave.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 8vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 4vh;
+}
+
+.services-text {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4vh;
+}
+
+.services-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.5%;
+}
+
+.service-box {
+  width: 27rem;
+  height: 23.7rem;
+  border: 1px solid #ececec;
+  border-radius: 1.6rem;
+  background-color: var(--color-white);
+}
+
+.service-box-green {
+  background-color: var(--color-dark-green);
+  width: 27rem;
+  height: 23.7rem;
+  border-radius: 1.6rem;
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 20% 12% 12% 12%;
+}
+
+.service-box:nth-of-type(8) {
+  background-color: var(--color-dark-green);
+}
+
+.service-box svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-iconBG-gray);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10%;
+}
+
+.service-box p {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  letter-spacing: -2%;
+  text-align: left;
+}
+
+/* ! process section */
+
+.process article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+}
