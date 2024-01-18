@@ -74,12 +74,13 @@ h2 {
   letter-spacing: -3%;
 }
 
-.h2-subtitle {
+span {
   font-family: Anek Bangla, Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: var(--color-black);
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   text-transform: uppercase;
+  padding-bottom: 2%;
 }
 
 h3 {
@@ -144,6 +145,40 @@ a {
   padding: 1.4rem 4rem 1.4rem 4rem;
   border-radius: 5rem;
   box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+}
+
+.button-white {
+  text-align: center;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-radius: 5rem;
+  width: 100%;
+  border: 1px solid #ececec;
+
+  margin-bottom: 2vh;
+}
+
+.button-white-solid {
+  text-align: center;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-radius: 5rem;
+  width: 100%;
+  box-shadow: 0px 38px 50px 0px rgba(3, 48, 43, 0.8);
+
+  margin-bottom: 2vh;
 }
 
 /* * general styling end */
@@ -293,7 +328,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1.5%;
 }
 
@@ -310,10 +345,6 @@ nav {
   width: 27rem;
   height: 23.7rem;
   border-radius: 1.6rem;
-}
-
-.color-white {
-  color: var(--color-white);
 }
 
 .box-content {
@@ -354,4 +385,165 @@ nav {
   justify-content: center;
   width: 60vw;
   margin: auto;
+  padding-bottom: 4vh;
+}
+
+.process-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 4vh;
+
+  gap: 5%;
+}
+
+.process-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  width: 25%;
+}
+
+.process-card:first-of-type svg {
+  border: 3rem solid white;
+  border-radius: 50%;
+  box-shadow: 0px 38px 100px 0px rgba(5, 121, 107, 0.1);
+}
+
+.process-card svg {
+  margin-bottom: 15%;
+
+  border: 3rem solid white;
+  outline: 1px dashed #05796b;
+  border-radius: 50%;
+}
+
+/* ! store section */
+
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin: auto;
+  text-align: center;
+}
+
+.store span {
+  color: var(--color-orange);
+}
+
+/* !    */
+
+.img-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.img-text-section article {
+  width: 60%;
+}
+
+.img-text-section article p {
+  padding-bottom: 8%;
+}
+
+/* ! plans */
+
+.plans {
+  background-image: url(./img/wave_background.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2%;
+  padding-bottom: 4vh;
+}
+
+.plans-card {
+  width: 20%;
+  background-color: var(--color-white);
+  padding: 2%;
+  border-radius: 1rem;
+  box-shadow: 0px 38px 100px 0px rgba(0, 0, 0, 0.08);
+}
+
+.price-text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: clamp(3.5rem, 3.1991rem + 0.9153vw, 4rem);
+}
+
+.small-text {
+  text-transform: uppercase;
+  color: var(--color-dark-green);
+  letter-spacing: 0.1rem;
+}
+
+.plans-card:nth-of-type(2) {
+  width: 20%;
+  background-color: var(--color-dark-green);
+  border: 1px solid #ececec;
+  padding: 2%;
+  border-radius: 1rem;
+  box-shadow: 0px 38px 100px 0px rgba(5, 121, 107, 0.4);
+}
+
+.plans-card:nth-of-type(2) p,
+.plans-card:nth-of-type(2) ul li,
+.plans-card:nth-of-type(2) span {
+  color: var(--color-white);
+}
+
+ul {
+  margin-bottom: 10%;
+}
+
+ul li {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 200%;
+  letter-spacing: -5%;
+  font-size: 1.6rem;
+  color: var(--color-dark-gray);
+  margin-bottom: 5%;
+
+  list-style-position: inside;
+  list-style-image: url("./img/Check-Circle.svg");
+}
+
+ul li:nth-of-type(3),
+ul li:nth-of-type(4) {
+  list-style-image: url("./img/Cross-Circle.svg");
+}
+
+.plans-card:nth-of-type(2) ul li {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 200%;
+  letter-spacing: -5%;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  margin-bottom: 5%;
+
+  list-style-position: inside;
+  list-style-image: url("./img/Check-Circle-inverted.svg");
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid rgba(133, 147, 163, 0.16);
 }
