@@ -211,6 +211,11 @@ nav {
   margin-right: 1vw;
 }
 
+.nav-links a img {
+  padding-left: 1vw;
+  padding-right: 2vw;
+}
+
 .sign-in {
   display: flex;
   justify-content: flex-end;
@@ -714,15 +719,12 @@ blockquote {
   }
 }
 
-/* ! tablet */
+/* # tablet */
 
 @media (max-width: 768px) {
   h1 {
-    font-family: Manrope, Arial, Helvetica, sans-serif;
-    font-weight: 600;
     color: var(--color-black);
-    font-size: clamp(2.875rem, 0.4067rem + 6.9652vw, 3.75rem);
-    line-height: 5rem;
+    line-height: 4rem;
     letter-spacing: -3%;
   }
 
@@ -733,65 +735,75 @@ blockquote {
   }
 
   span {
-    font-family: Anek Bangla, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
-    text-transform: uppercase;
     padding-bottom: 1vh;
   }
 
   h3 {
-    font-family: Manrope, Arial, Helvetica, sans-serif;
     text-align: left;
-    font-weight: 600;
 
     line-height: 2rem;
     letter-spacing: -2%;
   }
 
   p {
-    font-family: Manrope, Arial, Helvetica, sans-serif;
-
     line-height: 2.4rem;
   }
 
   a {
-    font-family: Manrope, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--color-black);
-    text-decoration: none;
   }
 
   nav {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
 
-  .landing-content img {
-    height: 50vw;
+  .logo {
+    font-weight: bold;
+    font-family: Anek Bangla, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 10vw;
+  }
+
+  .nav-links {
+    padding-left: 0;
+    padding-right: 0;
+    width: 40vw;
+  }
+
+  /* # make sign up invisible */
+  .sign-in a:nth-of-type(2) {
+    display: none;
+  }
+
+  .landing-section img {
+    max-width: 46%;
+  }
+
+  .landing-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .landing-content {
     text-align: center;
-    padding-left: 8vw;
-    padding-top: 2vh;
-    width: 60vw;
-  }
-
-  .landing-section {
-    flex-direction: column-reverse;
+    padding-left: 4vw;
+    padding-top: 8vh;
+    width: 50vw;
   }
 
   .mini-container {
-    width: 40vw;
+    max-width: 40vw;
   }
 
   .marketing-container {
     margin-top: 6vh;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
     gap: 10vw;
   }
 
@@ -868,16 +880,18 @@ blockquote {
 
   .landing-content {
     padding-left: 0vw;
-    padding-top: 4vh;
+    padding-top: 0vh;
+    margin: auto;
     width: 90vw;
   }
 
   .landing-section {
     padding-bottom: 4vh;
+    flex-direction: column-reverse;
   }
 
   .landing-section img {
-    max-width: 40%;
+    max-width: 100%;
   }
   .landing-content p {
     font-size: 1.4rem;
@@ -972,9 +986,12 @@ blockquote {
 
   .footer-links-container {
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
   .link-list {
-    min-width: 25vw;
+    min-width: 40vw;
   }
 }
